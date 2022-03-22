@@ -1,0 +1,92 @@
+
+/*
+ * HLCD_config.h
+ *
+ *  Created on: Oct 11, 2021
+ *      Author: AT Once
+ */
+
+#ifndef HLCD_HLCD_CONFIG_H_
+#define HLCD_HLCD_CONFIG_H_
+
+
+#define PORT_DATA      DIO_u8_PORTC
+#define PORT_CONTROL   DIO_u8_PORTD
+
+#define HLCD_RS_PIN    DIO_u8_PIN7
+#define HLCD_RW_PIN    DIO_u8_PIN6
+#define HLCD_E_PIN     DIO_u8_PIN5
+
+#define HLCD_D4_PIN   DIO_u8_PIN4
+#define HLCD_D5_PIN   DIO_u8_PIN5
+#define HLCD_D6_PIN   DIO_u8_PIN6
+#define HLCD_D7_PIN   DIO_u8_PIN7
+/*
+ *   choose Function SET :
+ *   FUNCTION_SET_8BIT_MODE_2LINES
+ *   FUNCTION_SET_8BIT_MODE_1LINES
+ *   FUNCTION_SET_4BIT_MODE_2LINES
+ *   FUNCTION_SET_4BIT_MODE_1LINES
+ */
+
+
+#define FUNCTION_SET  FUNCTION_SET_8BIT_MODE_2LINES
+
+/*
+ * choose DISPLAY_ON_OFF :
+ * DISPLAY_ON_CURSOR_ON_BLINK
+ * DISPLAY_ON_CURSOR_ON_NOBLINK
+ * DISPLAY_ON_CURSOR_OFF_NOBLINK
+ * DISPLAY_OFF
+ */
+#define DISPLAY_ON_OFF  DISPLAY_ON_CURSOR_OFF_NOBLINK
+
+/*
+ * choose ENTRY_MODE_SET:
+ * ENTRY_MODE_SET_INCREASE
+ * ENTRY_MODE_SET_DECREASE
+ */
+#define ENTRY_MODE_SET ENTRY_MODE_SET_INCREASE
+#endif
+
+
+/* HLCD_HLCD_CONFIG_H_ */
+//#ifndef HLCD_HLCD_CONFIG_H_
+//#define HLCD_HLCD_CONFIG_H_
+//
+//#define HLCD_DATA_PORT      DIO_u8_PORTC
+//#define HLCD_CONTROL_PORT   DIO_u8_PORTA
+//#define HLCD_RS_PIN         DIO_u8_PIN2
+//#define HLCD_RW_PIN         DIO_u8_PIN1
+//#define HLCD_E_PIN          DIO_u8_PIN0
+//
+//
+//
+///* please choose one of these sets :
+// * EIGHT_BIT_MODE_5X7_1LINE
+// * EIGHT_BIT_MODE_5X10_1LINE
+// *
+// * EIGHT_BIT_MODE_5X7_2LINE
+// * EIGHT_BIT_MODE_5X10_2LINE
+// *
+// * FOUR_BIT_MODE_5X7_1LINE
+// * FOUR_BIT_MODE_5X10_1LINE
+// *
+// * FOUR_BIT_MODE_5X7_2LINE
+// * FOUR_BIT_MODE_5X10_2LINE
+// */
+//#define FUNCTION_SET         EIGHT_BIT_MODE_5X7_2LINE
+///* Please choose one of these options:
+// * DISPLAY_ON_CURSOR_ON_BLINK
+// * DISPLAY_ON_CURSOR_ON_NO_BLINK
+// * DISPLAY_ON_CURSOR_OFF
+// * DISPLAY_OFF
+// */
+//#define DISPLAY_ON_OFF_CONTROL     DISPLAY_ON_CURSOR_ON_BLINK
+///* Please choose one of these options:
+// * 1- ENTRY_MODE_SET_INCREASE
+// * 2- ENTRY_MODE_SET_DECREASE
+// */
+//#define ENTRY_MODE_SET    ENTRY_MODE_SET_INCREASE   //control incremental or decrement addresses
+//
+//#endif /* HLCD_HLCD_CONFIG_H_ */
